@@ -1,0 +1,109 @@
+html{
+    background: black;
+    place-content: center;
+    align-content: center;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: yellow;
+}
+h2 {
+    text-align: center;
+    color: yellow;
+    font-size: 2rem;
+}
+
+#container-1 {
+    margin: 0 auto;
+    display: grid;
+    width: 80%;
+    height: 50vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-gap: 0px;
+    text-align: center;
+    background: black;
+    color: yellow;
+    border: 3px solid yellow;
+}
+#container-2 {
+    margin: 0 auto;
+    display: grid;
+    width: 80%;
+    height: 50vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-gap: 0px;
+    text-align: center;
+    background: black;
+    color: yellow;
+    border: 3px solid yellow;
+}
+#container-3 {
+    margin: 0 auto;
+    display: grid;
+    width: 80%;
+    height: 50vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-gap: 0px;
+    text-align: center;
+    background: black;
+    color: yellow;
+    border: 3px solid yellow;
+}
+#container-4 {
+    margin: 0 auto;
+    display: grid;
+    width: 80%;
+    height: 50vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-gap: 0px;
+    text-align: center;
+    background: black;
+    color: yellow;
+    border: 3px solid yellow;
+}
+
+.col {
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 0 auto;
+    color: yellow;
+}
+.col-1 {
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 0 auto;
+    color: yellow;
+}
+.col-2 {
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 0 auto;
+    color: yellow;
+}
+.col-3 {
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 0 auto;
+    color: yellow;
+}
+
+@media screen and (max-width: 850px){
+    #container-1{
+        width: 90%;
+    }
+    #container-2{
+        width: 90%;
+    }
+    #container-3{
+        width: 90%;
+    }
+    #container-4{
+        width: 90%;
+    }
+}
