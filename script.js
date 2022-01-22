@@ -1,6 +1,6 @@
 const api_url_films = "https://swapi.dev/api/films/"; //films
 const api_url_people = "https://swapi.dev/api/people/"; //people
-const api_url_planets = "https://swapi.dev/api/planets/" //planets
+const api_url_starships = "https://swapi.dev/api/starships/" //planets
 const api_url_species = "https://swapi.dev/api/species/" //species
 
 async function getapi_films(url) {
@@ -13,10 +13,10 @@ async function getapi_people(url) {
     const data = await response.json();
     showPeople(data);
 }
-async function getapi_planets(url) {
+async function getapi_starships(url) {
     const response = await fetch(url);
     const data = await response.json();
-    showPlanets(data);
+    showStarships(data);
 }
 async function getapi_species(url) {
     const response = await fetch(url);
@@ -26,7 +26,7 @@ async function getapi_species(url) {
 
 getapi_films(api_url_films);
 getapi_people(api_url_people);
-getapi_planets(api_url_planets);
+getapi_starships(api_url_starships);
 getapi_species(api_url_species);
 
 function showFilms(data) {
@@ -63,19 +63,19 @@ function showPeople(data) {
 
     document.getElementById("container-2").innerHTML = dataItems;
 }
-function showPlanets(data) {
+function showStarships(data) {
     let dataItems = `
     <div class="col-2">Nome</div>
-    <div class="col-2">População</div>
-    <div class="col-2">Horas/Dia</div>
-    <div class="col-2">Clima</div>`;
+    <div class="col-2">Modelo</div>
+    <div class="col-2">Classe</div>
+    <div class="col-2">Fabricante</div>`;
 
     for (const ship of data.results){
         dataItems += `
         <div>${ship.name}</div>
-        <div>${ship.population}</div>
-        <div>${ship.rotation_period}</div>
-        <div>${ship.climate}</div>`;
+        <div>${ship.model}</div>
+        <div>${ship.starship_class}</div>
+        <div>${ship.manufacturer}</div>`;
     }
 
     document.getElementById("container-3").innerHTML = dataItems;

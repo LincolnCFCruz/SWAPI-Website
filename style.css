@@ -1,71 +1,94 @@
 html{
-    background: black;
-    place-content: center;
-    align-content: center;
-    margin: 0 auto;
+    padding: 0;
+    border: 0;
 }
 
 h1 {
     text-align: center;
     color: yellow;
+    text-shadow: 5px 5px black;
 }
+
+p {
+    text-align: center;
+    font-style: italic;
+    color: yellow;
+    text-shadow: 5px 5px black;
+    font-size: 1rem;
+}
+
+
 h2 {
     text-align: center;
     color: yellow;
     font-size: 2rem;
+    text-shadow: 5px 5px black;
+}
+
+body{
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    font-family: 'Audiowide', cursive;
 }
 
 #container-1 {
     margin: 0 auto;
     display: grid;
     width: 80%;
-    height: 50vh;
+    height: 40vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
     grid-gap: 0px;
     text-align: center;
-    background: black;
+    place-content: center;
+    align-content: center;
+    align-items: center;
     color: yellow;
-    border: 3px solid yellow;
+    border: 1px outset yellow;
 }
 #container-2 {
     margin: 0 auto;
     display: grid;
     width: 80%;
-    height: 50vh;
+    height: 63vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
     grid-gap: 0px;
     text-align: center;
-    background: black;
+    place-content: center;
+    align-content: center;
+    align-items: center;
     color: yellow;
-    border: 3px solid yellow;
+    border: 1px outset yellow;
 }
 #container-3 {
     margin: 0 auto;
     display: grid;
     width: 80%;
-    height: 50vh;
+    height: 63vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
     grid-gap: 0px;
     text-align: center;
-    background: black;
+    place-content: center;
+    align-content: center;
+    align-items: center;
     color: yellow;
-    border: 3px solid yellow;
+    border: 1px outset yellow;
 }
 #container-4 {
     margin: 0 auto;
     display: grid;
     width: 80%;
-    height: 50vh;
+    height: 63vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
     grid-gap: 0px;
     text-align: center;
-    background: black;
+    place-content: center;
+    align-content: center;
+    align-items: center;
     color: yellow;
-    border: 3px solid yellow;
+    border: 1px outset yellow;
 }
 
 .col {
@@ -96,14 +119,33 @@ h2 {
 @media screen and (max-width: 850px){
     #container-1{
         width: 90%;
+        font-size: 12px;
     }
     #container-2{
         width: 90%;
+        font-size: 12px;
     }
     #container-3{
         width: 90%;
+        font-size: 10px;
     }
     #container-4{
         width: 90%;
+        font-size: 12px;
+    }
+
+    .col {
+        font-size: 1rem;
+    }
+    .col-1 {
+        font-size: 1rem;
+
+    }
+    .col-2 {
+        font-size: 1rem;
+
+    }
+    .col-3 {
+        font-size: 1rem;
     }
 }
